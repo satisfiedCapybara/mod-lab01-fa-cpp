@@ -38,7 +38,7 @@ unsigned int faStr2(const char *str) {
     while (str[i] != '\0') {
         if (inWord == true && uncorrectlyWord == false && str[i] == ' ') {
             inWord = false;
-        } else if (inWord == true && uncorrectlyWord == false 
+        } else if (inWord == true && uncorrectlyWord == false
         && isdigit(str[i])) {
             uncorrectlyWord = true;
             count--;
