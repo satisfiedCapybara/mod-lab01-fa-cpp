@@ -38,39 +38,47 @@ unsigned int faStr2(const char *str) {
     while (str[i] != '\0') {
         if (inWord == true && uncorrectlyWord == false && str[i] == ' ') {
             inWord = false;
-        } else if (inWord == true && uncorrectlyWord == false && isdigit(str[i])) {
+        } else if (inWord == true && uncorrectlyWord == false 
+        && isdigit(str[i])) {
             uncorrectlyWord = true;
             count--;
-        } else if (inWord == true && uncorrectlyWord == false && isalpha(str[i]) && isupper(str[i])) {
+        } else if (inWord == true && uncorrectlyWord == false
+        && isalpha(str[i]) && isupper(str[i])) {
             uncorrectlyWord = true;
             count--;
-        } else if (inWord == false && uncorrectlyWord == false && !isalpha(str[i]) &&!isdigit(str[i])) {
+        } else if (inWord == false && uncorrectlyWord == false
+        && !isalpha(str[i]) &&!isdigit(str[i])) {
             inWord = true;
             uncorrectlyWord = true;
-        } else if (inWord == false && uncorrectlyWord == false && isalpha(str[i]) && islower(str[i])) {
+        } else if (inWord == false && uncorrectlyWord == false
+        && isalpha(str[i]) && islower(str[i])) {
             inWord = true;
             uncorrectlyWord = true;
-        } else if (inWord == false && uncorrectlyWord == false && isalpha(str[i]) && isupper(str[i])) {
+        } else if (inWord == false && uncorrectlyWord == false
+        && isalpha(str[i]) && isupper(str[i])) {
             inWord = true;
             count++;
-        } else if (inWord == false && uncorrectlyWord == false && !isalpha(str[i]) && !isdigit(str[i])) {
+        } else if (inWord == false && uncorrectlyWord == false
+        && !isalpha(str[i]) && !isdigit(str[i])) {
             inWord = true;
             uncorrectlyWord == true;
-        }  else if (inWord == true && uncorrectlyWord == false && !isalpha(str[i]) & !isdigit(str[i])) {
+        } else if (inWord == true && uncorrectlyWord == false
+        && !isalpha(str[i]) & !isdigit(str[i])) {
             uncorrectlyWord = true;
             count--;
-        }         
-        else if (inWord == false && uncorrectlyWord == false && isdigit(str[i])) {
+        } else if (inWord == false && uncorrectlyWord == false
+        && isdigit(str[i])) {
             inWord = true;
             uncorrectlyWord = true;
-        } else if (inWord == true && uncorrectlyWord == true && str[i] == ' ') {
+        } else if (inWord == true && uncorrectlyWord == true
+        && str[i] == ' ') {
             inWord = false;
             uncorrectlyWord = false;
         }
         i++;
     }
 
-    return count; 
+    return count;
 }
 
 unsigned int faStr3(const char *str) {
@@ -92,6 +100,6 @@ unsigned int faStr3(const char *str) {
         i++;
     }
 
-    return round(static_cast<double>(std::accumulate(begin(letters_count), 
+    return round(static_cast<double>(std::accumulate(begin(letters_count),
         end(letters_count), 0, std::plus<int>())) / letters_count.size());
 }
