@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-9  -g   CMakeFiles/mod-lab01-fa-cpp.test.dir/AllTests.cpp.o CMakeFiles/mod-lab01-fa-cpp.test.dir/tests.cpp.o  -o mod-lab01-fa-cpp.test  -Wl,-rpath,/home/semen/МИПИС/mod-lab01-fa-cpp/build/src: ../src/libmod-lab01-fa-cpp.so -lgtest -lpthread 

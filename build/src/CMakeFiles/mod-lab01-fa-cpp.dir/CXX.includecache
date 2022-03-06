@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/fun.h
+cctype
+-
+cmath
+-
+numeric
+-
+vector
+-
+
+/home/semen/МИПИС/mod-lab01-fa-cpp/src/fun.cpp
+fun.h
+/home/semen/МИПИС/mod-lab01-fa-cpp/src/fun.h
+
