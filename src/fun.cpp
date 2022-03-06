@@ -70,7 +70,7 @@ unsigned int faStr2(const char *str) {
         i++;
     }
 
-    return count;
+    return count; 
 }
 
 unsigned int faStr3(const char *str) {
