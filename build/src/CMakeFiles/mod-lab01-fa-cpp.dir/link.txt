@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-9 -fPIC -g  -shared -Wl,-soname,libmod-lab01-fa-cpp.so -o libmod-lab01-fa-cpp.so CMakeFiles/mod-lab01-fa-cpp.dir/fun.cpp.o  -lpthread 
